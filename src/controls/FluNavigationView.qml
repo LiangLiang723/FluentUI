@@ -520,6 +520,7 @@ Item {
                     return footerItems.children
                 }
             }
+            interactive: false
             currentIndex: -1
             delegate: Loader{
                 property var model: modelData
