@@ -22,6 +22,12 @@ FluScrollablePage{
             }
             FluToggleSwitch{
                 disabled: toggle_switch.checked
+                text:"Right"
+            }
+            FluToggleSwitch{
+                disabled: toggle_switch.checked
+                text:"Left"
+                textRight: false
             }
         }
         FluToggleSwitch{
