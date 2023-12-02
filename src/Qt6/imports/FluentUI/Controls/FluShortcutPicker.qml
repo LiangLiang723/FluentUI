@@ -22,8 +22,8 @@ FluIconButton {
         id:item_key_control
         property string text : ""
         color:FluTheme.primaryColor
-        width: Math.max(item_text.implicitWidth + 12,28)
-        height: Math.max(item_text.implicitHeight + 12,28)
+        width: Math.max(item_text.implicitWidth+12,28)
+        height: Math.max(item_text.implicitHeight,28)
         radius: 4
         Text{
             id:item_text
@@ -68,3 +68,4 @@ FluIconButton {
     }
 
 }
+
