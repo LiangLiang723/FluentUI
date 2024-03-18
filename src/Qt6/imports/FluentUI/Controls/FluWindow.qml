@@ -4,7 +4,7 @@ import QtQuick.Layouts
 import FluentUI
 
 Window {
-    default property list<QtObject> contentData
+    default property alias contentData : layout_content.data
     property string windowIcon: FluApp.windowIcon
     property int launchMode: FluWindowType.Standard
     property var argument:({})
@@ -226,7 +226,7 @@ Window {
         sourceComponent: window.useSystemAppBar ? undefined : com_app_bar
     }
     Item{
-        data: window.contentData
+        id:layout_content
         anchors{
             top: loader_app_bar.bottom
             left: parent.left
